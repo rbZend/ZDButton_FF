@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <button id="debugThis" class="btn btn-outline-success btn-block btn-sm"><img src="picto-one.png"/> &nbsp;&nbsp;Debug this one page</button>
+        <button id="debugNext" class="btn btn-outline-info btn-block btn-sm"><img src="picto-next.png"/> Debug next request</button>
+        <button id="debugAll" class="btn btn-outline-warning btn-block btn-sm"><img src="picto-all.png"/> Debug all requests</button>
+        <button id="debugUnset" class="btn btn-outline-danger btn-block btn-sm"><img src="picto-unset.png"/> Unset debug cookies</button>
+        <hr>
+        Options<br>
+            <label for="ip" class="sr-only">Debug IP(s)</label>
+            <input id="ip" class="form-control  form-control-sm" placeholder="Debug IP(s)" required>
+            <label for="port" class="sr-only">Debug Port</label>
+            <input id="port" class="form-control form-control-sm" placeholder="Debug Port" required>
+            <button id="detect" class="btn btn-outline-secondary btn-block btn-sm">try to detect</button>
+            <div class="checkbox small">
+              <label><input type="checkbox" id="local" value="use-remote" checked> Debug local copies</label>
+            </div>
+            <div class="checkbox small">
+              <label><input type="checkbox" id="stop" value="debug-stop" checked> Stop on first line</label>
+            </div>
+            <button id="save" class="btn btn-outline-primary btn-sm btn-block">save as defaults</button>
+    </div> <!-- /container -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
